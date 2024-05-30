@@ -21,7 +21,7 @@ class DreamTracker {
 }
 
 const timer1 = new DreamTracker ({
-    selector: '#clock1',
+    selector: '#clock',
     targetDate: new Date ('June, 25 2024 14:00:00')
 })
 
