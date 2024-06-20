@@ -4,13 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Tracker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #clock {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #f76c6c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e55b5b;
+        }
+
+        .dream-entry, .dream-log {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 80%;
+            height: 100px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        #dreamList {
+            list-style: none;
+            padding: 0;
+        }
+
+        #dreamList li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h2>Dream Tracker</h2>
-
-    <div id="clock"></div>
-    <button id="startButton">Start Timer</button>
-
-    <script src="/js/dreamtracker.js"></script>
+    <body>
+        <div class="container">
+        <h2>Dream Tracker</h2>
+    
+        <div id="clock"></div>
+        <button id="startButton">Start Timer</button>
+    
+        <script src="/js/dreamtracker.js"></script>
+    </body>
 </body>
 </html>
